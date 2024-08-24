@@ -1,8 +1,7 @@
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  DATE: 24-08-2024
+###  NAME: SURIYA M
+###  ROLL NO : 212223110055
+###  DEPARTMENT: CSE(IOT)
 
 
 # EXPERIMENT--02-INTERFACING-A-DIGITAL-INPUT-TO-IOT-DEVELOPMENT-BOARD-
@@ -77,11 +76,26 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
-
+while (1)
+  {
+    
+	  if(IRstatus==1)
+	  	 {
+	  		 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+	  		 HAL_Delay(1000);
+	  		 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);
+	  		 HAL_Delay(1000);
+	  	 }else{
+	  		 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+	  		 HAL_Delay(1000);
+	  	 }
+    
+  }
 
 
 ## Output  :
- 
+ ![Screenshot (66)](https://github.com/user-attachments/assets/294818d0-9423-469a-a5ba-c408ca83d463)
+
  
  
  
